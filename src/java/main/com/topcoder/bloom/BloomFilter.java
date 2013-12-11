@@ -249,6 +249,7 @@ public class BloomFilter implements Cloneable {
      * @throws NullPointerException if item is null
      */
     public boolean contains(Object item) {
+    	return false;
     }
 
     /**
@@ -266,7 +267,7 @@ public class BloomFilter implements Cloneable {
      * @throws IllegalArgumentException if any of the collection items is null
      */
     public boolean containsAll(Collection collection) {
-
+    	return false;
     }
 
     /**
@@ -283,7 +284,7 @@ public class BloomFilter implements Cloneable {
      * @return true if the specified Object is equal to this Bloom filter
      */
     public boolean equals(Object obj) {
-
+    	return false;
     }
 
     /**
@@ -297,7 +298,7 @@ public class BloomFilter implements Cloneable {
      * @return the hash code value for this Bloom filter.
      */
     public int hashCode() {
-
+    	return 0;
     }
 
     /**
@@ -330,6 +331,7 @@ public class BloomFilter implements Cloneable {
      * @throws IncompatibleBloomFiltersException if the two Bloom filters are incompatible
      */
     public BloomFilter unite(BloomFilter bloomFilter) {
+    	return null;
     }
 
     /**
@@ -348,6 +350,7 @@ public class BloomFilter implements Cloneable {
      * @throws IncompatibleBloomFiltersException if the two Bloom filters are incompatible
      */
     public BloomFilter intersect(BloomFilter bloomFilter) {
+    	return null;
     }
 
     /**
@@ -355,7 +358,7 @@ public class BloomFilter implements Cloneable {
      * Removes all the items from the Bloom filter.
      * </p>
      */
-    public void clear() 
+    public void clear() {
     }
 
     /**
@@ -375,7 +378,7 @@ public class BloomFilter implements Cloneable {
      * @return string representation of this Bloom filter's bit set.
      */
     public String getSerializedBitSet() {
-
+    	return null;
     }
 
     /**
@@ -397,6 +400,7 @@ public class BloomFilter implements Cloneable {
      * @return a string representation of the Bloom filter
      */
     public String getSerialized() {
+    	return null;
     }
 
     /**
@@ -407,6 +411,7 @@ public class BloomFilter implements Cloneable {
      * @return  the hash function family used by this Bloom filter
      */
     public HashFunctionFamily getHashFunctionFamily() {
+    	return null;
     }
 
     /**
@@ -420,7 +425,7 @@ public class BloomFilter implements Cloneable {
      * @return a clone of this Bloom filter
      */
     public Object clone() {
-
+    	return null;
     }
 
     /**
@@ -432,7 +437,7 @@ public class BloomFilter implements Cloneable {
      * @return the length of bit set used by this Bloom filter.
      */
     public int getBitSetLength() {
-
+    	return 0;
     }
 
     /**
@@ -497,5 +502,6 @@ public class BloomFilter implements Cloneable {
      */
     private HashFunctionFamily createHashFunctions(Class hashClass, Class constructorParameterType,
             Object constructorParameterValue) {
+    	return null;
     }
 }
